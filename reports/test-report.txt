@@ -1,0 +1,166 @@
+
+> C:\Users\HG\Documents\Codex\2026-11-19\build-a-complete-interview-ready-e-2\scripts\..\.venv\Scripts\python.exe manage.py check
+System check identified no issues (0 silenced).
+
+> C:\Users\HG\Documents\Codex\2026-11-19\build-a-complete-interview-ready-e-2\scripts\..\.venv\Scripts\python.exe manage.py makemigrations --check --dry-run
+No changes detected
+
+> C:\Users\HG\Documents\Codex\2026-11-19\build-a-complete-interview-ready-e-2\scripts\..\.venv\Scripts\python.exe manage.py test --verbosity 2
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+System.Management.Automation.RemoteException
+Found 11 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: django_filters, drf_spectacular, messages, rest_framework, rest_framework_simplejwt, staticfiles
+  Apply all migrations: accounts, admin, auth, cart, catalog, contenttypes, orders, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0001_initial... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying accounts.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying catalog.0001_initial... OK
+  Applying cart.0001_initial... OK
+  Applying cart.0002_alter_cartitem_options... OK
+  Applying orders.0001_initial... OK
+test_login_refresh_and_profile (apps.accounts.tests.AuthenticationTests.test_login_refresh_and_profile) ... ok
+test_profile_requires_auth (apps.accounts.tests.AuthenticationTests.test_profile_requires_auth) ... ok
+test_register_and_duplicate_email (apps.accounts.tests.AuthenticationTests.test_register_and_duplicate_email) ... ok
+test_add_update_remove_and_cart_total (apps.cart.tests.CartTests.test_add_update_remove_and_cart_total) ... ok
+test_stock_limit_and_owner_isolation (apps.cart.tests.CartTests.test_stock_limit_and_owner_isolation) ... ok
+test_catalog_write_requires_staff (apps.catalog.tests.CatalogTests.test_catalog_write_requires_staff) ... ok
+test_product_list_paginates_and_filters (apps.catalog.tests.CatalogTests.test_product_list_paginates_and_filters) ... ok
+test_schema_and_category_routes (apps.catalog.tests.CatalogTests.test_schema_and_category_routes) ... ok
+test_cancel_restores_stock_and_repeat_cancel_rejected (apps.orders.tests.OrderTests.test_cancel_restores_stock_and_repeat_cancel_rejected) ... ok
+test_checkout_captures_price_decrements_stock_and_clears_cart (apps.orders.tests.OrderTests.test_checkout_captures_price_decrements_stock_and_clears_cart) ... ok
+test_empty_checkout_rejected (apps.orders.tests.OrderTests.test_empty_checkout_rejected) ... ok
+System.Management.Automation.RemoteException
+----------------------------------------------------------------------
+Ran 11 tests in 4.417s
+System.Management.Automation.RemoteException
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+System.Management.Automation.RemoteException
+  Applying sessions.0001_initial... OK
+System check identified no issues (0 silenced).
+Collection: Commerce API - 100 Executable Smoke Requests
+Base URL: http://127.0.0.1:8000
+Requests: 100
+
+PASS 001 Products list/filter scenario 001 — HTTP 200; valid JSON
+PASS 002 Products list/filter scenario 002 — HTTP 200; valid JSON
+PASS 003 Products list/filter scenario 003 — HTTP 200; valid JSON
+PASS 004 Products list/filter scenario 004 — HTTP 200; valid JSON
+PASS 005 Products list/filter scenario 005 — HTTP 200; valid JSON
+PASS 006 Products list/filter scenario 006 — HTTP 200; valid JSON
+PASS 007 Products list/filter scenario 007 — HTTP 200; valid JSON
+PASS 008 Products list/filter scenario 008 — HTTP 200; valid JSON
+PASS 009 Products list/filter scenario 009 — HTTP 200; valid JSON
+PASS 010 Products list/filter scenario 010 — HTTP 200; valid JSON
+PASS 011 Products list/filter scenario 011 — HTTP 200; valid JSON
+PASS 012 Products list/filter scenario 012 — HTTP 200; valid JSON
+PASS 013 Products list/filter scenario 013 — HTTP 200; valid JSON
+PASS 014 Products list/filter scenario 014 — HTTP 200; valid JSON
+PASS 015 Products list/filter scenario 015 — HTTP 200; valid JSON
+PASS 016 Products list/filter scenario 016 — HTTP 200; valid JSON
+PASS 017 Products list/filter scenario 017 — HTTP 200; valid JSON
+PASS 018 Products list/filter scenario 018 — HTTP 200; valid JSON
+PASS 019 Products list/filter scenario 019 — HTTP 200; valid JSON
+PASS 020 Products list/filter scenario 020 — HTTP 200; valid JSON
+PASS 021 Products list/filter scenario 021 — HTTP 200; valid JSON
+PASS 022 Products list/filter scenario 022 — HTTP 200; valid JSON
+PASS 023 Products list/filter scenario 023 — HTTP 200; valid JSON
+PASS 024 Products list/filter scenario 024 — HTTP 200; valid JSON
+PASS 025 Products list/filter scenario 025 — HTTP 200; valid JSON
+PASS 026 Products list/filter scenario 026 — HTTP 200; valid JSON
+PASS 027 Products list/filter scenario 027 — HTTP 200; valid JSON
+PASS 028 Products list/filter scenario 028 — HTTP 200; valid JSON
+PASS 029 Products list/filter scenario 029 — HTTP 200; valid JSON
+PASS 030 Products list/filter scenario 030 — HTTP 200; valid JSON
+PASS 031 Products list/filter scenario 031 — HTTP 200; valid JSON
+PASS 032 Products list/filter scenario 032 — HTTP 200; valid JSON
+PASS 033 Products list/filter scenario 033 — HTTP 200; valid JSON
+PASS 034 Products list/filter scenario 034 — HTTP 200; valid JSON
+PASS 035 Products list/filter scenario 035 — HTTP 200; valid JSON
+PASS 036 Products list/filter scenario 036 — HTTP 200; valid JSON
+PASS 037 Products list/filter scenario 037 — HTTP 200; valid JSON
+PASS 038 Products list/filter scenario 038 — HTTP 200; valid JSON
+PASS 039 Products list/filter scenario 039 — HTTP 200; valid JSON
+PASS 040 Products list/filter scenario 040 — HTTP 200; valid JSON
+PASS 041 Products list/filter scenario 041 — HTTP 200; valid JSON
+PASS 042 Products list/filter scenario 042 — HTTP 200; valid JSON
+PASS 043 Products list/filter scenario 043 — HTTP 200; valid JSON
+PASS 044 Products list/filter scenario 044 — HTTP 200; valid JSON
+PASS 045 Products list/filter scenario 045 — HTTP 200; valid JSON
+PASS 046 Products list/filter scenario 046 — HTTP 200; valid JSON
+PASS 047 Products list/filter scenario 047 — HTTP 200; valid JSON
+PASS 048 Products list/filter scenario 048 — HTTP 200; valid JSON
+PASS 049 Products list/filter scenario 049 — HTTP 200; valid JSON
+PASS 050 Products list/filter scenario 050 — HTTP 200; valid JSON
+PASS 051 Products list/filter scenario 051 — HTTP 200; valid JSON
+PASS 052 Products list/filter scenario 052 — HTTP 200; valid JSON
+PASS 053 Products list/filter scenario 053 — HTTP 200; valid JSON
+PASS 054 Products list/filter scenario 054 — HTTP 200; valid JSON
+PASS 055 Products list/filter scenario 055 — HTTP 200; valid JSON
+PASS 056 Products list/filter scenario 056 — HTTP 200; valid JSON
+PASS 057 Products list/filter scenario 057 — HTTP 200; valid JSON
+PASS 058 Products list/filter scenario 058 — HTTP 200; valid JSON
+PASS 059 Products list/filter scenario 059 — HTTP 200; valid JSON
+PASS 060 Products list/filter scenario 060 — HTTP 200; valid JSON
+PASS 061 Products list/filter scenario 061 — HTTP 200; valid JSON
+PASS 062 Products list/filter scenario 062 — HTTP 200; valid JSON
+PASS 063 Products list/filter scenario 063 — HTTP 200; valid JSON
+PASS 064 Products list/filter scenario 064 — HTTP 200; valid JSON
+PASS 065 Products list/filter scenario 065 — HTTP 200; valid JSON
+PASS 066 Products list/filter scenario 066 — HTTP 200; valid JSON
+PASS 067 Products list/filter scenario 067 — HTTP 200; valid JSON
+PASS 068 Products list/filter scenario 068 — HTTP 200; valid JSON
+PASS 069 Products list/filter scenario 069 — HTTP 200; valid JSON
+PASS 070 Products list/filter scenario 070 — HTTP 200; valid JSON
+PASS 071 Categories list scenario 071 — HTTP 200; valid JSON
+PASS 072 Categories list scenario 072 — HTTP 200; valid JSON
+PASS 073 Categories list scenario 073 — HTTP 200; valid JSON
+PASS 074 Categories list scenario 074 — HTTP 200; valid JSON
+PASS 075 Categories list scenario 075 — HTTP 200; valid JSON
+PASS 076 Categories list scenario 076 — HTTP 200; valid JSON
+PASS 077 Categories list scenario 077 — HTTP 200; valid JSON
+PASS 078 Categories list scenario 078 — HTTP 200; valid JSON
+PASS 079 Categories list scenario 079 — HTTP 200; valid JSON
+PASS 080 Categories list scenario 080 — HTTP 200; valid JSON
+PASS 081 Categories list scenario 081 — HTTP 200; valid JSON
+PASS 082 Categories list scenario 082 — HTTP 200; valid JSON
+PASS 083 Categories list scenario 083 — HTTP 200; valid JSON
+PASS 084 Categories list scenario 084 — HTTP 200; valid JSON
+PASS 085 Categories list scenario 085 — HTTP 200; valid JSON
+PASS 086 Categories list scenario 086 — HTTP 200; valid JSON
+PASS 087 Categories list scenario 087 — HTTP 200; valid JSON
+PASS 088 Categories list scenario 088 — HTTP 200; valid JSON
+PASS 089 Categories list scenario 089 — HTTP 200; valid JSON
+PASS 090 Categories list scenario 090 — HTTP 200; valid JSON
+PASS 091 Categories list scenario 091 — HTTP 200; valid JSON
+PASS 092 Categories list scenario 092 — HTTP 200; valid JSON
+PASS 093 Categories list scenario 093 — HTTP 200; valid JSON
+PASS 094 Categories list scenario 094 — HTTP 200; valid JSON
+PASS 095 Categories list scenario 095 — HTTP 200; valid JSON
+PASS 096 Schema and catalog smoke scenario 096 — HTTP 200; valid JSON
+PASS 097 Schema and catalog smoke scenario 097 — HTTP 200; valid JSON
+PASS 098 Schema and catalog smoke scenario 098 — HTTP 200; valid JSON
+PASS 099 Schema and catalog smoke scenario 099 — HTTP 200; valid JSON
+PASS 100 Schema and catalog smoke scenario 100 — HTTP 200; valid JSON
+
+Result: 100/100 passed; 0 failed.
