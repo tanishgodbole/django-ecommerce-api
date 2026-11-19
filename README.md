@@ -1,6 +1,6 @@
 # Commerce API
 
-Interview-ready Django REST API for a small online shop. It includes email/password registration, JWT access and refresh, a staff-managed product catalog, per-user carts, transactional checkout/cancellation, OpenAPI docs, deterministic seed data, and automated tests.
+Django REST API for a small online shop. It includes email/password registration, JWT access and refresh, a staff-managed product catalog, per-user carts, transactional checkout/cancellation, OpenAPI docs, deterministic seed data, and automated tests.
 
 ## Run locally
 
